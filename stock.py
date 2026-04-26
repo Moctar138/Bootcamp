@@ -1,12 +1,22 @@
 
 list_produit = []
+"""
+la liste contient des dictionnaire de produit sous la forme
 
+{
+    "nom" : [string],
+    "quantite" : [int],
+    "prix" : [float]
+}
+
+"""
 
 def menu() -> None :
     print("1. Ajouter un produit")
     print("2. Afficher le stock")
     print("3. Mettre à jour la quantité")
     print("4. quitter")
+
 
 
 def main():
