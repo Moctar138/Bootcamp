@@ -17,6 +17,10 @@ def menu() -> None :
     print("3. Mettre à jour la quantité")
     print("4. quitter")
 
+def maj_quantite(numero_produit : int, nouvelle_quantite : int) -> None:
+    anciene_quant : int = list_produit[numero_produit]["quantite"]
+    list_produit[numero_produit]["quantite"] = nouvelle_quantite
+    print(f"la quantite de {list_produit[numero_produit]["nom"]} passe de {anciene_quant} a {list_produit[numero_produit]["quantite"]}")
 
 
 def main():
